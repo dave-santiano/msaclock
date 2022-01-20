@@ -18,7 +18,7 @@ data class Alarm(
     @ColumnInfo(name="end_time")
     var endTime: Long = 0L,
 
-    @ColumnInfo(name="formatted_time")
-    var formattedTime: LocalTime
+//    @ColumnInfo(name="formatted_time")
+//    var formattedTime: LocalTime
 )
 //TODO figure out more alarm related data for database

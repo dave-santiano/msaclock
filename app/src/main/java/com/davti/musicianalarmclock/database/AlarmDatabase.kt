@@ -26,7 +26,7 @@ abstract class AlarmDatabase: RoomDatabase(){
                     instance = Room.databaseBuilder(
                         context.applicationContext,
                         AlarmDatabase::class.java,
-                        "sleep_history_database"
+                        "alarms_database"
                     )
                         .fallbackToDestructiveMigration()
                         .build()

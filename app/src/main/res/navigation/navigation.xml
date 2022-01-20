@@ -7,5 +7,13 @@
     <fragment
         android:id="@+id/alarmsFragment"
         android:name="com.davti.musicianalarmclock.ui.alarms.AlarmsFragment"
-        android:label="AlarmsFragment" />
+        android:label="AlarmsFragment" >
+        <action
+            android:id="@+id/action_alarmsFragment_to_alarmSettingsFragment"
+            app:destination="@id/alarmSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/alarmSettingsFragment"
+        android:name="com.davti.musicianalarmclock.alarmsettings.AlarmSettingsFragment"
+        android:label="AlarmSettingsFragment" />
 </navigation>

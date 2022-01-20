@@ -2,9 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-
     <data>
-
         <variable
             name="alarmsViewModel"
             type="com.davti.musicianalarmclock.ui.alarms.AlarmsViewModel" />
@@ -16,7 +14,6 @@
         android:layout_height="match_parent"
         tools:context=".ui.alarms.AlarmsFragment">
 
-
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="50dp"
@@ -24,6 +21,8 @@
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
+            android:background="#FF0303"
+            android:onClick="@{()->alarmsViewModel.onSetAlarm()}"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
